@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compliment Roulette</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script defer src="/static/app.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Compliment Roulette</h1>
+
+      <section class="random">
+        <div id="random-text" class="random-text">Press Spin to get a compliment ✨</div>
+        <button id="spin-btn" class="primary">Spin</button>
+      </section>
+
+      <section class="submit">
+        <h2>Add a compliment</h2>
+        <div class="row">
+          <input id="compliment-input" maxlength="140" placeholder="Write a compliment (1–140 chars)" />
+          <button id="submit-btn">Submit</button>
+        </div>
+        <div id="msg" class="msg" role="status"></div>
+      </section>
+
+      <section class="stats">
+        <div>Total compliments: <span id="count">0</span></div>
+      </section>
+
+      <section class="recent">
+        <h2>Recent</h2>
+        <ul id="recent-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
